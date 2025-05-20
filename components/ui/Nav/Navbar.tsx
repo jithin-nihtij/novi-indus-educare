@@ -73,7 +73,7 @@ export const Navbar = () => {
           </DropdownMenu>
           <Link href={"/"}>
             <Button className="bg-transparent hover:bg-transparent shadow-none">
-              Cateer
+              Career
             </Button>
           </Link>
           <Link href={"/"}>
