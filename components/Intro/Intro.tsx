@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+import { Button } from "../ui/button";
 import { PeopleOne } from "./PeopleOne";
 import { PeopleTwo } from "./PeopleTwo";
 import { TextCarousal } from "./TextCarousal";
@@ -24,7 +26,19 @@ const Intro = () => {
         <div className="float">
           <PeopleTwo />
         </div>
-        <div></div>
+        <div className="flex justify-center">
+          <div className="relative">
+            <Button className="rotate-[2deg] hover:rotate-0 w-[200px] bg-yellow-200  ">
+              Book A Free Demo Class
+            </Button>
+            <Button className=" -rotate-6 hover:rotate-0 absolute -left-[1%] bg-[#8A1538] hover:bg-[#8A1538] w-[200px]">
+              <span>Book A Free Demo Class</span>
+              <span>
+                <ArrowUpRight />
+              </span>
+            </Button>
+          </div>
+        </div>
         <div className="float">
           <PeopleOne />
         </div>
