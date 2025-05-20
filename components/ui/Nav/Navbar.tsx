@@ -31,7 +31,7 @@ export const Navbar = () => {
         <div className="flex items-center">
           <Link href={"/"}>
             <Button className="bg-transparent hover:bg-transparent shadow-none">
-              About
+              About Us
             </Button>
           </Link>
           <DropdownMenu>
