@@ -71,8 +71,45 @@ export const SecondLayer = () => {
             <TiltedButton text="Read More" />
           </div>
         </div>
+        <div className="relative flex justify-center  ">
+          <div className="relative w-full">
+            <div className="absolute right-1/3 top-0">
+              <div className="relative">
+                <Image
+                  src={"/assets/secondLayer/frameOne.svg"}
+                  alt="images"
+                  width={200}
+                  height={200}
+                />
+                <Image
+                  src={"/assets/secondLayer/frameImageOne.png"}
+                  alt="images"
+                  width={180}
+                  height={180}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+              </div>
+            </div>
+            <div className="absolute  bottom-0 top-0 lg:bottom-1/3 lg:top-1/4 left-1/2">
+              <div className="relative">
+                <Image
+                  src={"/assets/secondLayer/frameTwo.svg"}
+                  alt="images"
+                  width={200}
+                  height={200}
+                />
+                <Image
+                  src={"/assets/secondLayer/frameTwoImage.png"}
+                  alt="images"
+                  width={180}
+                  height={180}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="relative"></div>
     </section>
   );
 };
