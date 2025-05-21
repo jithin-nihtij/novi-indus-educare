@@ -22,10 +22,10 @@ export const Navbar = () => {
         <Image
           src={"/assets/nav/educareLogo.svg"}
           alt="edu care logo"
-          width={200}
-          height={200}
+          width={0}
+          height={0}
           unoptimized
-          className="object-cover"
+          className="object-cover w-[200px] h-full"
         />
 
         <div className="flex items-center">
