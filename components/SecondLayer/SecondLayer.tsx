@@ -44,7 +44,7 @@ export const SecondLayer = () => {
   ];
 
   return (
-    <section>
+    <section className="py-10">
       <div className="w-full min-h-19 max-h-max bg-[#FFF3E1] flex items-center p-3">
         <div className="w-[90%] mx-auto grid-cols-1 md:grid-cols-2 gap-10 py-6 grid lg:grid-cols-4 items-center divide-x-0 lg:divide-x divide-[#8A1538]">
           {perks.map((item) => (
