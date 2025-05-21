@@ -9,7 +9,7 @@ import { SecondText } from "./SecondText";
 
 export const TextCarousal = () => {
   return (
-    <div className="w-1/2 mx-auto my-20">
+    <div className=" w-3/4 md:w-1/2 mx-auto my-20">
       <Carousel
         opts={{
           loop: true,
