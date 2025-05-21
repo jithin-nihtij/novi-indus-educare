@@ -1,3 +1,4 @@
+import { FourthLayer } from "@/components/FourthLayer/FourthLayer";
 import Intro from "@/components/Intro/Intro";
 import { SecondLayer } from "@/components/SecondLayer/SecondLayer";
 import { ThirdLayer } from "@/components/ThirdLayer/ThirdLayer";
@@ -11,6 +12,7 @@ export default function Home() {
       <Intro />
       <SecondLayer />
       <ThirdLayer />
+      <FourthLayer />
       <WhatsAppIconMain />
     </div>
   );
