@@ -72,7 +72,7 @@ function Carousel({
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 2000); // scroll every 3 seconds
+    }, 4000); // scroll every 3 seconds
 
     return () => clearInterval(interval); // cleanup on unmount
   }, [api]);
