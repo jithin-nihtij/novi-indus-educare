@@ -1,17 +1,29 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "../ui/button";
-import { PeopleOne } from "./PeopleOne";
-import { PeopleTwo } from "./PeopleTwo";
 import { TextCarousal } from "./TextCarousal";
 import { WhatsAppIcon } from "./WhatsAppIcon";
+import Image from "next/image";
+import { Marquee } from "../magicui/marquee";
 
 const Intro = () => {
+  const curriculum = [
+    {
+      img: "/assets/intro/MarqueeOne.svg",
+    },
+    {
+      img: "/assets/intro/MarqueeTwo.svg",
+    },
+    {
+      img: "/assets/intro/MarqueeThree.svg",
+    },
+  ];
+
   return (
     <div
       style={{
         backgroundImage: `url('/assets/intro/introBg.png')`,
       }}
-      className="w-full h-[600px]"
+      className="w-full h-screen"
     >
       <TextCarousal />
       <div className="fixed  top-30 right-10">
@@ -22,27 +34,59 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-[40%_20%_40%]">
-        <div className="float relative">
-          <div className="absolute -top-14">
-            <PeopleTwo />
+      <div className="grid lg:grid-cols-[30%_40%_30%] grid-cols-1">
+        <div className="flex justify-center items-center">
+          <Image
+            src={"assets/intro/peopleOne.svg"}
+            alt="people one"
+            width={500}
+            height={500}
+            className="object-cover float"
+          />
+        </div>
+
+        <div>
+          <div className="flex justify-center">
+            <div className="relative lg:pt-[150px] py-10 ">
+              <Button className="rotate-[2deg] hover:rotate-0 w-[200px] bg-yellow-200 h-14 hover:bg-yellow-200">
+                Book A Free Demo Class
+              </Button>
+              <Button className=" -rotate-6 hover:rotate-0 absolute -left-[1%] bg-[#8A1538] hover:bg-[#8A1538] w-[200px] h-14">
+                <span>Book A Free Demo Class</span>
+                <span>
+                  <ArrowUpRight />
+                </span>
+              </Button>
+            </div>
+          </div>
+          <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+            <div className="text-[#8A1538] font-bold text-[24px]">
+              Curriculums We Offer:
+            </div>
+            <Marquee className="[--duration:20s]">
+              {curriculum.map((item) => (
+                <Image
+                  key={item.img}
+                  src={item.img}
+                  alt="curriculum"
+                  width={300}
+                  height={300}
+                />
+              ))}
+            </Marquee>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="relative pt-[150px]">
-            <Button className="rotate-[2deg] hover:rotate-0 w-[200px] bg-yellow-200 h-14 hover:bg-yellow-200">
-              Book A Free Demo Class
-            </Button>
-            <Button className=" -rotate-6 hover:rotate-0 absolute -left-[1%] bg-[#8A1538] hover:bg-[#8A1538] w-[200px] h-14">
-              <span>Book A Free Demo Class</span>
-              <span>
-                <ArrowUpRight />
-              </span>
-            </Button>
-          </div>
-        </div>
-        <div className="float ">
-          <PeopleOne />
+
+        <div className="flex justify-center items-center">
+          <Image
+            src={"assets/intro/peopleTwo.svg"}
+            alt="people one"
+            width={500}
+            height={500}
+            className="object-cover float"
+          />
         </div>
       </div>
     </div>
