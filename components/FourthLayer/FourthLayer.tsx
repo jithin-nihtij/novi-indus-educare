@@ -8,15 +8,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import { Bricolage_Grotesque } from "next/font/google";
 import { TiltedButton } from "../TiltedButton";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
-
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Header } from "../Header";
 
 export const FourthLayer = () => {
   const offer = [
@@ -42,9 +37,8 @@ export const FourthLayer = () => {
     <section className="py-10 w-[90%] mx-auto">
       <div className="grid col-span-2 lg:grid-cols-3 ">
         <div className="invisible lg:block"></div>
-        <h1 className={`text-[42px] ${bricolage.className} `}>
-          Programs we offer for <span className="font-bold">Kids</span>
-        </h1>
+        <Header text="Programs we offer for" boldText="Kids" />
+
         <div className="flex justify-end">
           <div className="relative">
             <TiltedButton text="view all" />

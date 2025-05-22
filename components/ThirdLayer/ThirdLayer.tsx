@@ -1,10 +1,5 @@
-import { Bricolage_Grotesque } from "next/font/google";
 import Image from "next/image";
-
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Header } from "../Header";
 
 export const ThirdLayer = () => {
   const teachings = [
@@ -17,9 +12,8 @@ export const ThirdLayer = () => {
     <section className="bg-[#F9F7F4] w-full py-10">
       <div className="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 ">
         <div>
-          <h1 className={`${bricolage.className} text-[42px]`}>
-            Our Way Of <span className="font-bold">Teaching</span>
-          </h1>
+          <Header text="Our Way Of" boldText="Teaching" />
+
           <ul className="list-disc pl-4 space-y-4">
             {teachings.map((item) => (
               <li key={item}>{item}</li>

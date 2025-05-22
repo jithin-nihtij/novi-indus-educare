@@ -4,12 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Bricolage_Grotesque } from "next/font/google";
-
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Header } from "../Header";
 
 const questions = [
   {
@@ -33,9 +28,7 @@ export const FAQ = () => {
   return (
     <section className="bg-[#F9F7F4]">
       <div className="w-[90%] mx-auto py-10 space-y-4">
-        <h1 className={`${bricolage.className} text-[42px] text-center `}>
-          Frequently asked <span className="font-bold">Questions</span>
-        </h1>
+        <Header boldText="Questions" text="Frequently Asked" />
 
         {questions.map((ques) => (
           <Accordion

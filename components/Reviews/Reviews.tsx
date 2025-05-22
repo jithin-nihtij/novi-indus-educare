@@ -1,4 +1,3 @@
-import { Bricolage_Grotesque } from "next/font/google";
 import {
   Carousel,
   CarouselContent,
@@ -7,11 +6,8 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import Image from "next/image";
+import { Header } from "../Header";
 
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
-});
 export const Reviews = () => {
   const reviews = [
     {
@@ -33,9 +29,7 @@ export const Reviews = () => {
 
   return (
     <section className="space-y-4 py-10 w-[90%] mx-auto">
-      <h1 className={`${bricolage.className} text-[42px] text-center`}>
-        Hear From Our <span className="font-bold">Valuable Parents</span>
-      </h1>
+      <Header boldText="Valuable Parents" text="Hear From Our" />
 
       <Carousel
         className="w-[80%] md:w-full max-w-full mx-auto overflow-visible py-10"

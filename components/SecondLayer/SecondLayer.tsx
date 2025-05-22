@@ -1,12 +1,7 @@
 import Image from "next/image";
 
-import { Bricolage_Grotesque } from "next/font/google";
 import { TiltedButton } from "../TiltedButton";
-
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Header } from "../Header";
 
 export const SecondLayer = () => {
   const perks = [
@@ -88,9 +83,7 @@ const Icons = ({ src }: { src: string }) => {
 export const Story = () => {
   return (
     <div className="space-y-6">
-      <h1 className={`${bricolage.className} text-[42px]`}>
-        Story Of <span className="font-bold">Educare</span>
-      </h1>
+      <Header text="Story Of" boldText="Educare" />
       <p>
         At <span className="font-semibold">Educare</span> education center, we
         believe that every student deserves personalized, focused attention to
