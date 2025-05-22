@@ -37,7 +37,7 @@ export const FourthLayer = () => {
   ];
 
   return (
-    <div className="py-10 w-[90%] mx-auto">
+    <section className="py-10 w-[90%] mx-auto">
       <div className="grid col-span-2 lg:grid-cols-3 ">
         <div className="invisible lg:block"></div>
         <h1 className={`text-[42px] ${bricolage.className} `}>
@@ -72,7 +72,7 @@ export const FourthLayer = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </div>
+    </section>
   );
 };
 

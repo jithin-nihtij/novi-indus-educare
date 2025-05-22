@@ -14,7 +14,7 @@ export const ThirdLayer = () => {
   ];
 
   return (
-    <div className="bg-[#F9F7F4] w-full py-10">
+    <section className="bg-[#F9F7F4] w-full py-10">
       <div className="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 ">
         <div>
           <h1 className={`${bricolage.className} text-[42px]`}>
@@ -37,6 +37,6 @@ export const ThirdLayer = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -57,7 +57,7 @@ export const SecondLayer = () => {
       </div>
       <div className="w-[90%] mx-auto py-20 grid grid-cols-1 lg:grid-cols-[60%_40%] h-full">
         <Story />
-        {/* <TiltedImages /> */}
+        <TiltedImages />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 space-y-4 md:space-y-0 w-[90%] mx-auto">
         {missonVision.map((item) => (
@@ -121,7 +121,7 @@ export const Story = () => {
 
 export const TiltedImages = () => {
   return (
-    <div className="relative flex justify-center">
+    <div className="relative  justify-center hidden lg:flex">
       <div className="relative w-full">
         <div className="absolute right-1/3 top-0">
           <div className="relative">
