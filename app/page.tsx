@@ -1,4 +1,5 @@
 import { BlogPosts } from "@/components/BlogPosts/BlogPosts";
+import { FAQ } from "@/components/FAQ/FAQ";
 import { Footer } from "@/components/Footer/Footer";
 import { FourthLayer } from "@/components/FourthLayer/FourthLayer";
 import Intro from "@/components/Intro/Intro";
@@ -15,6 +16,7 @@ export default function Home() {
       <SecondLayer />
       <ThirdLayer />
       <FourthLayer />
+      <FAQ />
       <BlogPosts />
       <Footer />
       <WhatsAppIconMain />
