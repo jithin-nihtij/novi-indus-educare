@@ -10,10 +10,12 @@ import {
 import Image from "next/image";
 import { Bricolage_Grotesque } from "next/font/google";
 import { TiltedButton } from "../TiltedButton";
+import { Button } from "../ui/button";
+import { ArrowUpRight } from "lucide-react";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: "400", // or '500', '700', etc.
+  weight: "400",
 });
 
 export const FourthLayer = () => {
@@ -91,7 +93,13 @@ export const PinkCard = ({
         <p className="text-[#8A1538] font-bold">{title}</p>
         <p className="text-[#8A1538]">{description}</p>
         <div className="relative py-4">
-          <TiltedButton text="Read More" />
+          <Button className="rotate-[2deg] hover:rotate-0 w-[200px] bg-yellow-200 h-10 hover:bg-yellow-200"></Button>
+          <Button className=" -rotate-6 hover:rotate-0 absolute top-4 -left-[1%] bg-[#8A1538] hover:bg-[#8A1538] w-[200px] h-10 cursor-pointer">
+            <span>Read More</span>
+            <span>
+              <ArrowUpRight />
+            </span>
+          </Button>
         </div>
       </div>
       <div className="relative w-[20%]">

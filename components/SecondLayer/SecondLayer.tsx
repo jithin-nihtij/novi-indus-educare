@@ -5,7 +5,7 @@ import { TiltedButton } from "../TiltedButton";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: "400", // or '500', '700', etc.
+  weight: "400",
 });
 
 export const SecondLayer = () => {
