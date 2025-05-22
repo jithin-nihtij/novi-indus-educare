@@ -67,8 +67,8 @@ export const Footer = () => {
           <div className="flex justify-center items-center h-full">
             © 2024 educare
           </div>
-          <div className="flex justify-center items-center h-full ">
-            Designed By
+          <div className="flex justify-center items-center h-full space-x-2 ">
+            <span>Designed By </span>
             <span className="text-[#DCC196]"> Noviindus Technologies</span>
           </div>
           <div className="flex justify-center items-center h-full space-x-2 text-[#DCC196]">
