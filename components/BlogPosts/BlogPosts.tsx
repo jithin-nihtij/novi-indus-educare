@@ -1,11 +1,6 @@
-import { Bricolage_Grotesque } from "next/font/google";
 import { TiltedButton } from "../TiltedButton";
 import Image from "next/image";
-
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Header } from "../Header";
 
 const posts = [
   {
@@ -39,9 +34,8 @@ export const BlogPosts = () => {
     <section className="py-10">
       <div className="w-[90%] mx-auto space-y-4">
         <div className="flex justify-between flex-wrap space-y-4">
-          <h1 className={`${bricolage.className} text-[42px]`}>
-            Our Latest <span className="font-bold">Blog Posts</span>
-          </h1>
+          <Header text="Our Latest" boldText="Blog Posts" />
+
           <div className="relative">
             <TiltedButton text="View all" />
           </div>
