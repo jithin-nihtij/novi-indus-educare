@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer/Footer";
 import { FourthLayer } from "@/components/FourthLayer/FourthLayer";
 import Intro from "@/components/Intro/Intro";
 import { SecondLayer } from "@/components/SecondLayer/SecondLayer";
@@ -13,6 +14,7 @@ export default function Home() {
       <SecondLayer />
       <ThirdLayer />
       <FourthLayer />
+      <Footer />
       <WhatsAppIconMain />
     </div>
   );
